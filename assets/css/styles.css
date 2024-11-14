@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-heading2: "Sen", sans-serif;
+  --color-heading2: #191919;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Comfortaa", sans-serif;
+}
+
+/* =============Common========== */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-content {
+  width: 1240px;
+  max-width: calc(100% - 270px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-lv2 {
+  text-align: center;
+  color: var(--color-heading2);
+  font-family: var(--font-heading2);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 45.6px */
+}
+
+.icon-product-card {
+  width: 20px;
+  height: 20px;
+}
+
+/* ==========Header========== */
+
+/* ==========Product========== */
+/* Khoảng cách với phần Category */
+#product {
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+/* ----------product head---------- */
+/* phần đầu Product nằm ở giữa */
+/* .product-head {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+} */
+.product-head-title {
+  /* gap: 48px; */
+  margin-top: 48px;
+}
+
+.product-head-category {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.product-head-category ul li {
+  width: 136px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS cho button category phần Product */
+.btn-product-head-category {
+  width: 100px;
+  height: 30px;
+  border: #f8edf8;
+  flex-shrink: 0;
+  border-radius: 43px;
+  background-color: #f8edf8;
+}
+
+/* ----------product card----------*/
+
+.product-card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+/* thẻ sản phẩm */
+.product-card .product-item {
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+  height: 398px;
+  margin-top: 32px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.product-card .product-item:hover {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/*  */
+.product-card .product-item .product-image {
+  display: flex;
+  position: relative;
+}
+
+/* CSS cho chữ SALE */
+.product-card .product-item .product-image .sale {
+  padding: 5px 10px;
+  text-align: center;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 16.8px */
+}
+
+/* CSS cho bên ngoài chữ SALE */
+span.sale {
+  position: absolute;
+  top: 13px;
+  left: 11px;
+  width: 59px;
+  height: 25px;
+  border-radius: 17px;
+  background-color: #f27373;
+}
+
+.product-card .product-item .product-image .icon {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 17px;
+  right: 13px;
+  gap: 7px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/*  */
+
+/* kích thước ảnh sản phẩm */
+.product-card .product-item .product-image .img-1 {
+  width: 100%;
+  border-radius: 20px;
+  /* display: block; */
+}
+
+/* product details */
+.product-card .product-item .product-details {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/*  */
+.product-card .product-item .product-details .describe {
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 21.6px */
+}
+
+.product-card .product-item .product-details .price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* CSS cho new-price */
+.product-card .product-item .product-details .price .new-price {
+  color: #25bf0c;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+}
+
+/* CSS cho old-price */
+.product-card .product-item .product-details .price .old-price {
+  text-align: center;
+  color: #898989;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  text-decoration-line: line-through;
+}
+
+.product-card .product-item .product-details .rating {
+  display: flex;
+  /* gap: 12px; */
+}
+
+/* ----------product banner---------- */
+.product-banner {
+  display: flex;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+/* .product-banner .banner-left {
+  position: relative;
+} */
+
+/* banner right */
+.product-banner .right {
+  position: relative;
+}
+
+.product-banner .right .info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-start;
+  top: 62.16px;
+  right: 38px;
+  gap: 32px;
+}
+
+.product-banner .right .info .btn-shop-now {
+  color: #191919;
+  text-align: center;
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+
+  width: 138px;
+  height: 43px;
+  border: none;
+  border-radius: 74px;
+  background: #ffe926;
+}
