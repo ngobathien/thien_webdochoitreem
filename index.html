@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đồ chơi trẻ em</title>
 
-    <!-- embed font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đồ chơi trẻ em</title>
 
-    <!-- reset CSS-->
-    <link rel="stylesheet" href="/assets/css/reset.css" />
+  <!-- embed font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+    rel="stylesheet" />
 
-    <!-- style -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-  </head>
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body style="height: 2000px">
-    <!-- header -->
-    <header id="header">
-      <div class="main-content">
-        <div class="login"></div>
-        <div class="body">
-          <!-- logo -->
-          <img src="" alt="" />
-          <!-- nav -->
-          <!--  -->
+  <!-- reset CSS-->
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+
+  <!-- style -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+
+<body style="height: 2000px">
+  <!-- header -->
+
+  <header id="header">
+    <div class="main-content">
+      <div class="body">
+        <!-- logo -->
+        <a href="index.html" class="logo">
+          <img src="/assets/img/logo.png" alt="logo" />
+        </a>
+
+        <!-- nav -->
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </nav>
+
+        <!-- Action -->
+        <div class="cart-search-login">
+          <img class="cart" src="/assets/icon/CartMajor.svg" alt="" />
+          <div class="search-bar-container">
+            <input type="text" name="input" id="search-input" placeholder="Tìm kiếm" />
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <i class="fa-solid fa-user"></i>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- main -->
-    <main>
-      <!-- Product -->
-      <div id="product">
-        <div class="main-content">
-          <!-- product head -->
-          <div class="product-head">
-            <!-- Tiêu đề phần đầu của Product -->
+  <!-- main -->
+  <main>
+    <!-- Thiện -->
+    <!-- Product -->
+    <div id="product">
+      <div class="main-content">
+        <!-- product head -->
+        <div class="product-head">
+          <!-- Tiêu đề phần đầu của Product -->
 
-            <!-- <div> -->
-            <h2 class="heading-lv2 product-head-title">
-              Lựa chọn hàng đầu cho con bạn
-            </h2>
-            <!-- </div> -->
+          <!-- <div> -->
+          <h2 class="heading-lv2 product-head-title">
+            Lựa chọn hàng đầu cho con bạn
+          </h2>
+          <!-- </div> -->
 
-            <!-- Danh mục phần đầu của Product -->
-            <div class="product-head-category">
-              <button class="btn-product-head-category">Nổi bật</button>
-              <button class="btn-product-head-category">Bán chạy nhất</button>
-              <button class="btn-product-head-category">Hàng mới về</button>
-              <!-- <ul>
+          <!-- Danh mục phần đầu của Product -->
+          <div class="product-head-category">
+            <button class="btn-product-head-category">Nổi bật</button>
+            <button class="btn-product-head-category">Bán chạy nhất</button>
+            <button class="btn-product-head-category">Hàng mới về</button>
+            <!-- <ul>
                 <li>
                   <a class="featured" href="#featured">Nổi bật</a>
                 </li>
@@ -65,317 +93,372 @@
                   <a class="new-arrivals" href="#new-arrivals">Hàng mới về</a>
                 </li>
               </ul> -->
-              <!-- <a class="featured" href="#featured">Nổi bật</a>
+            <!-- <a class="featured" href="#featured">Nổi bật</a>
               <a class="best-seller" href="#best-seller">Bán chạy nhất</a>
               <a class="new-arrivals" href="#new-arrivals">Hàng mới về</a> -->
+          </div>
+        </div>
+
+        <!-- product card -->
+        <div class="product-card">
+          <!-- Product item 1 -->
+          <div class="product-item">
+            <div class="product-image">
+              <!-- Sale -->
+              <span class="sale">SALE</span>
+
+              <!-- icon phần sản phẩm -->
+              <div class="icon">
+                <!-- icon trái tim -->
+                <img class="icon-heart" src="./assets/icon/Heart.svg" alt="Heart" />
+
+                <!-- icon giỏ hàng -->
+                <img class="icon-shopping-cart" src="./assets/icon/Shopping Cart.svg" alt="Shopping Cart" />
+              </div>
+
+              <!-- ảnh sản phẩm 1 -->
+              <img class="img-1" src="/assets/img/img-product-1.png" alt="" />
+            </div>
+
+            <div class="product-details">
+              <p class="describe">Đồ chơi xếp hình khối</p>
+              <div class="price">
+                <p class="new-price">$29.00</p>
+                <p class="old-price">$39.00</p>
+              </div>
+              <p class="rating">⭐⭐⭐⭐☆</p>
             </div>
           </div>
 
-          <!-- product card -->
-          <div class="product-card">
-            <!-- Product item 1 -->
-            <div class="product-item">
-              <div class="product-image">
-                <!-- Sale -->
-                <span class="sale">SALE</span>
+          <!-- Product item 2 -->
+          <div class="product-item">
+            <div class="product-image">
+              <!-- Sale -->
+              <span class="sale">SALE</span>
 
-                <!-- icon phần sản phẩm -->
-                <div class="icon">
-                  <!-- icon trái tim -->
-                  <img
-                    class="icon-heart"
-                    src="./assets/icon/Heart.svg"
-                    alt="Heart"
-                  />
+              <!-- icon phần sản phẩm -->
+              <div class="icon">
+                <!-- icon trái tim -->
+                <img class="icon-heart" src="./assets/icon/Heart.svg" alt="Heart" />
 
-                  <!-- icon giỏ hàng -->
-                  <img
-                    class="icon-shopping-cart"
-                    src="./assets/icon/Shopping Cart.svg"
-                    alt="Shopping Cart"
-                  />
-                </div>
-
-                <!-- ảnh sản phẩm 1 -->
-                <img class="img-1" src="/assets/img/img-product-1.png" alt="" />
+                <!-- icon giỏ hàng -->
+                <img class="icon-shopping-cart" src="./assets/icon/Shopping Cart.svg" alt="Shopping Cart" />
               </div>
 
-              <div class="product-details">
-                <p class="describe">Đồ chơi xếp hình khối</p>
-                <div class="price">
-                  <p class="new-price">$29.00</p>
-                  <p class="old-price">$39.00</p>
-                </div>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-              </div>
+              <!-- ảnh sản phẩm 2 -->
+              <img class="img-1" src="/assets/img/img-product-2.jpg" alt="" />
             </div>
 
-            <!-- Product item 2 -->
-            <div class="product-item">
-              <div class="product-image">
-                <!-- Sale -->
-                <span class="sale">SALE</span>
-
-                <!-- icon phần sản phẩm -->
-                <div class="icon">
-                  <!-- icon trái tim -->
-                  <img
-                    class="icon-heart"
-                    src="./assets/icon/Heart.svg"
-                    alt="Heart"
-                  />
-
-                  <!-- icon giỏ hàng -->
-                  <img
-                    class="icon-shopping-cart"
-                    src="./assets/icon/Shopping Cart.svg"
-                    alt="Shopping Cart"
-                  />
-                </div>
-
-                <!-- ảnh sản phẩm 2 -->
-                <img class="img-1" src="/assets/img/img-product-2.jpg" alt="" />
+            <div class="product-details">
+              <p class="describe">Đồ chơi xếp hình khối</p>
+              <div class="price">
+                <p class="new-price">$29.00</p>
+                <p class="old-price">$39.00</p>
               </div>
-
-              <div class="product-details">
-                <p class="describe">Đồ chơi xếp hình khối</p>
-                <div class="price">
-                  <p class="new-price">$29.00</p>
-                  <p class="old-price">$39.00</p>
-                </div>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-              </div>
-            </div>
-
-            <!-- Product item 3 -->
-            <div class="product-item">
-              <div class="product-image">
-                <!-- Sale -->
-                <span class="sale">SALE</span>
-
-                <!-- icon phần sản phẩm -->
-                <div class="icon">
-                  <!-- icon trái tim -->
-                  <img
-                    class="icon-heart"
-                    src="./assets/icon/Heart.svg"
-                    alt="Heart"
-                  />
-
-                  <!-- icon giỏ hàng -->
-                  <img
-                    class="icon-shopping-cart"
-                    src="./assets/icon/Shopping Cart.svg"
-                    alt="Shopping Cart"
-                  />
-                </div>
-
-                <!-- ảnh sản phẩm 3 -->
-                <img class="img-1" src="/assets/img/img-product-3.jpg" alt="" />
-              </div>
-
-              <div class="product-details">
-                <p class="describe">Đồ chơi xếp hình khối</p>
-                <div class="price">
-                  <p class="new-price">$29.00</p>
-                  <p class="old-price">$39.00</p>
-                </div>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-              </div>
-            </div>
-
-            <!-- Product item 4 -->
-            <div class="product-item">
-              <div class="product-image">
-                <!-- Sale -->
-                <span class="sale">SALE</span>
-
-                <!-- icon phần sản phẩm -->
-                <div class="icon">
-                  <!-- icon trái tim -->
-                  <img
-                    class="icon-heart"
-                    src="./assets/icon/Heart.svg"
-                    alt="Heart"
-                  />
-
-                  <!-- icon giỏ hàng -->
-                  <img
-                    class="icon-shopping-cart"
-                    src="./assets/icon/Shopping Cart.svg"
-                    alt="Shopping Cart"
-                  />
-                </div>
-
-                <!-- ảnh sản phẩm 4 -->
-                <img class="img-1" src="/assets/img/img-product-4.jpg" alt="" />
-              </div>
-
-              <div class="product-details">
-                <p class="describe">Đồ chơi xếp hình khối</p>
-                <div class="price">
-                  <p class="new-price">$29.00</p>
-                  <p class="old-price">$39.00</p>
-                </div>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-              </div>
-            </div>
-
-            <!-- Product item 5 -->
-            <div class="product-item">
-              <div class="product-image">
-                <!-- Sale -->
-                <span class="sale">SALE</span>
-
-                <!-- icon phần sản phẩm -->
-                <div class="icon">
-                  <!-- icon trái tim -->
-                  <img
-                    class="icon-heart"
-                    src="./assets/icon/Heart.svg"
-                    alt="Heart"
-                  />
-
-                  <!-- icon giỏ hàng -->
-                  <img
-                    class="icon-shopping-cart"
-                    src="./assets/icon/Shopping Cart.svg"
-                    alt="Shopping Cart"
-                  />
-                </div>
-
-                <!-- ảnh sản phẩm 5 -->
-                <img class="img-1" src="/assets/img/img-product-5.jpg" alt="" />
-              </div>
-
-              <div class="product-details">
-                <p class="describe">Đồ chơi xếp hình khối</p>
-                <div class="price">
-                  <p class="new-price">$29.00</p>
-                  <p class="old-price">$39.00</p>
-                </div>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-              </div>
-            </div>
-
-            <!-- Product item 6-->
-            <div class="product-item">
-              <div class="product-image">
-                <!-- Sale -->
-                <span class="sale">SALE</span>
-
-                <!-- icon phần sản phẩm -->
-                <div class="icon">
-                  <!-- icon trái tim -->
-                  <img
-                    class="icon-heart"
-                    src="./assets/icon/Heart.svg"
-                    alt="Heart"
-                  />
-
-                  <!-- icon giỏ hàng -->
-                  <img
-                    class="icon-shopping-cart"
-                    src="./assets/icon/Shopping Cart.svg"
-                    alt="Shopping Cart"
-                  />
-                </div>
-
-                <!-- ảnh sản phẩm 6 -->
-                <img class="img-1" src="/assets/img/img-product-6.jpg" alt="" />
-              </div>
-
-              <div class="product-details">
-                <p class="describe">Đồ chơi xếp hình khối</p>
-                <div class="price">
-                  <p class="new-price">$29.00</p>
-                  <p class="old-price">$39.00</p>
-                </div>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-              </div>
-            </div>
-
-            <!-- Product item 7-->
-            <div class="product-item">
-              <div class="product-image">
-                <!-- Sale -->
-                <span class="sale">SALE</span>
-
-                <!-- icon phần sản phẩm -->
-                <div class="icon">
-                  <!-- icon trái tim -->
-                  <img
-                    class="icon-heart"
-                    src="./assets/icon/Heart.svg"
-                    alt="Heart"
-                  />
-
-                  <!-- icon giỏ hàng -->
-                  <img
-                    class="icon-shopping-cart"
-                    src="./assets/icon/Shopping Cart.svg"
-                    alt="Shopping Cart"
-                  />
-                </div>
-
-                <!-- ảnh sản phẩm 7 -->
-                <img class="img-1" src="/assets/img/img-product-7.jpg" alt="" />
-              </div>
-
-              <div class="product-details">
-                <p class="describe">Đồ chơi xếp hình khối</p>
-                <div class="price">
-                  <p class="new-price">$29.00</p>
-                  <p class="old-price">$39.00</p>
-                </div>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-              </div>
-            </div>
-
-            <!-- Product item 8-->
-            <div class="product-item">
-              <div class="product-image">
-                <!-- Sale -->
-                <span class="sale">SALE</span>
-
-                <!-- icon phần sản phẩm -->
-                <div class="icon">
-                  <!-- icon trái tim -->
-                  <img
-                    class="icon-heart"
-                    src="./assets/icon/Heart.svg"
-                    alt="Heart"
-                  />
-
-                  <!-- icon giỏ hàng -->
-                  <img
-                    class="icon-shopping-cart"
-                    src="./assets/icon/Shopping Cart.svg"
-                    alt="Shopping Cart"
-                  />
-                </div>
-
-                <!-- ảnh sản phẩm 8 -->
-                <img class="img-1" src="/assets/img/img-product-8.jpg" alt="" />
-              </div>
-
-              <div class="product-details">
-                <p class="describe">Đồ chơi xếp hình khối</p>
-                <div class="price">
-                  <p class="new-price">$29.00</p>
-                  <p class="old-price">$39.00</p>
-                </div>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-              </div>
+              <p class="rating">⭐⭐⭐⭐☆</p>
             </div>
           </div>
 
-          <!-- productPopular -->
+          <!-- Product item 3 -->
+          <div class="product-item">
+            <div class="product-image">
+              <!-- Sale -->
+              <span class="sale">SALE</span>
+
+              <!-- icon phần sản phẩm -->
+              <div class="icon">
+                <!-- icon trái tim -->
+                <img class="icon-heart" src="./assets/icon/Heart.svg" alt="Heart" />
+
+                <!-- icon giỏ hàng -->
+                <img class="icon-shopping-cart" src="./assets/icon/Shopping Cart.svg" alt="Shopping Cart" />
+              </div>
+
+              <!-- ảnh sản phẩm 3 -->
+              <img class="img-1" src="/assets/img/img-product-3.jpg" alt="" />
+            </div>
+
+            <div class="product-details">
+              <p class="describe">Đồ chơi xếp hình khối</p>
+              <div class="price">
+                <p class="new-price">$29.00</p>
+                <p class="old-price">$39.00</p>
+              </div>
+              <p class="rating">⭐⭐⭐⭐☆</p>
+            </div>
+          </div>
+
+          <!-- Product item 4 -->
+          <div class="product-item">
+            <div class="product-image">
+              <!-- Sale -->
+              <span class="sale">SALE</span>
+
+              <!-- icon phần sản phẩm -->
+              <div class="icon">
+                <!-- icon trái tim -->
+                <img class="icon-heart" src="./assets/icon/Heart.svg" alt="Heart" />
+
+                <!-- icon giỏ hàng -->
+                <img class="icon-shopping-cart" src="./assets/icon/Shopping Cart.svg" alt="Shopping Cart" />
+              </div>
+
+              <!-- ảnh sản phẩm 4 -->
+              <img class="img-1" src="/assets/img/img-product-4.jpg" alt="" />
+            </div>
+
+            <div class="product-details">
+              <p class="describe">Đồ chơi xếp hình khối</p>
+              <div class="price">
+                <p class="new-price">$29.00</p>
+                <p class="old-price">$39.00</p>
+              </div>
+              <p class="rating">⭐⭐⭐⭐☆</p>
+            </div>
+          </div>
+
+          <!-- Product item 5 -->
+          <div class="product-item">
+            <div class="product-image">
+              <!-- Sale -->
+              <span class="sale">SALE</span>
+
+              <!-- icon phần sản phẩm -->
+              <div class="icon">
+                <!-- icon trái tim -->
+                <img class="icon-heart" src="./assets/icon/Heart.svg" alt="Heart" />
+
+                <!-- icon giỏ hàng -->
+                <img class="icon-shopping-cart" src="./assets/icon/Shopping Cart.svg" alt="Shopping Cart" />
+              </div>
+
+              <!-- ảnh sản phẩm 5 -->
+              <img class="img-1" src="/assets/img/img-product-5.jpg" alt="" />
+            </div>
+
+            <div class="product-details">
+              <p class="describe">Đồ chơi xếp hình khối</p>
+              <div class="price">
+                <p class="new-price">$29.00</p>
+                <p class="old-price">$39.00</p>
+              </div>
+              <p class="rating">⭐⭐⭐⭐☆</p>
+            </div>
+          </div>
+
+          <!-- Product item 6-->
+          <div class="product-item">
+            <div class="product-image">
+              <!-- Sale -->
+              <span class="sale">SALE</span>
+
+              <!-- icon phần sản phẩm -->
+              <div class="icon">
+                <!-- icon trái tim -->
+                <img class="icon-heart" src="./assets/icon/Heart.svg" alt="Heart" />
+
+                <!-- icon giỏ hàng -->
+                <img class="icon-shopping-cart" src="./assets/icon/Shopping Cart.svg" alt="Shopping Cart" />
+              </div>
+
+              <!-- ảnh sản phẩm 6 -->
+              <img class="img-1" src="/assets/img/img-product-6.jpg" alt="" />
+            </div>
+
+            <div class="product-details">
+              <p class="describe">Đồ chơi xếp hình khối</p>
+              <div class="price">
+                <p class="new-price">$29.00</p>
+                <p class="old-price">$39.00</p>
+              </div>
+              <p class="rating">⭐⭐⭐⭐☆</p>
+            </div>
+          </div>
+
+          <!-- Product item 7-->
+          <div class="product-item">
+            <div class="product-image">
+              <!-- Sale -->
+              <span class="sale">SALE</span>
+
+              <!-- icon phần sản phẩm -->
+              <div class="icon">
+                <!-- icon trái tim -->
+                <img class="icon-heart" src="./assets/icon/Heart.svg" alt="Heart" />
+
+                <!-- icon giỏ hàng -->
+                <img class="icon-shopping-cart" src="./assets/icon/Shopping Cart.svg" alt="Shopping Cart" />
+              </div>
+
+              <!-- ảnh sản phẩm 7 -->
+              <img class="img-1" src="/assets/img/img-product-7.jpg" alt="" />
+            </div>
+
+            <div class="product-details">
+              <p class="describe">Đồ chơi xếp hình khối</p>
+              <div class="price">
+                <p class="new-price">$29.00</p>
+                <p class="old-price">$39.00</p>
+              </div>
+              <p class="rating">⭐⭐⭐⭐☆</p>
+            </div>
+          </div>
+
+          <!-- Product item 8-->
+          <div class="product-item">
+            <div class="product-image">
+              <!-- Sale -->
+              <span class="sale">SALE</span>
+
+              <!-- icon phần sản phẩm -->
+              <div class="icon">
+                <!-- icon trái tim -->
+                <img class="icon-heart" src="./assets/icon/Heart.svg" alt="Heart" />
+
+                <!-- icon giỏ hàng -->
+                <img class="icon-shopping-cart" src="./assets/icon/Shopping Cart.svg" alt="Shopping Cart" />
+              </div>
+
+              <!-- ảnh sản phẩm 8 -->
+              <img class="img-1" src="/assets/img/img-product-8.jpg" alt="" />
+            </div>
+
+            <div class="product-details">
+              <p class="describe">Đồ chơi xếp hình khối</p>
+              <div class="price">
+                <p class="new-price">$29.00</p>
+                <p class="old-price">$39.00</p>
+              </div>
+              <p class="rating">⭐⭐⭐⭐☆</p>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
 
-    <!-- footer -->
-    <footer></footer>
-  </body>
+      <!-- Vương -->
+      <!-- product popular -->
+      <div class="product-popular">
+        <div class="main-content">
+          <div class="title">
+            <h2 class="heading-lv2 product-head-title">
+              Khách hàng yêu thích
+            </h2>
+            <p class="para">Sản phẩm phổ biến</p>
+          </div>
+          <div class="product-card">
+            <!-- item 1 -->
+            <div class="product-item">
+              <div class="product-image">
+                <span class="sale">SALE</span>
+
+                <div class="icon">
+                  <img class="icon-heart" src="assets/image_1/Heart.svg" alt="" />
+                  <img class="icon-shopping-cart" src="assets/image_1/Shopping Cart.svg" alt="" />
+                </div>
+
+                <img class="img-1" src="assets/image_1/toy1.png" alt="Toy 1" />
+              </div>
+
+              <div class="product-details">
+                <p>Đồ chơi xếp hình khối</p>
+                <div class="price">
+                  <p class="new-price">$29.00</p>
+                  <p class="old-price">$39.00</p>
+                </div>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+            <!-- item 2-->
+            <div class="product-item">
+              <div class="product-image">
+                <span class="sale">SALE</span>
+
+                <div class="icon">
+                  <img class="icon-heart" src="assets/image_1/Heart.svg" alt="" />
+                  <img class="icon-shopping-cart" src="assets/image_1/Shopping Cart.svg" alt="" />
+                </div>
+
+                <img class="img-1" src="assets/image_1/toy2.png" alt="Toy 2" />
+              </div>
+
+              <div class="product-details">
+                <p>Đồ chơi xếp hình khối</p>
+                <div class="price">
+                  <p class="new-price">$29.00</p>
+                  <p class="old-price">$39.00</p>
+                </div>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div class="product-item">
+              <div class="product-image">
+                <span class="sale">SALE</span>
+
+                <div class="icon">
+                  <img class="icon-heart" src="assets/image_1/Heart.svg" alt="" />
+                  <img class="icon-shopping-cart" src="assets/image_1/Shopping Cart.svg" alt="" />
+                </div>
+
+                <img class="img-1" src="assets/image_1/toy3.png" alt="Toy 3" />
+              </div>
+
+              <div class="product-details">
+                <p>Đồ chơi xếp hình khối</p>
+                <div class="price">
+                  <p class="new-price">$29.00</p>
+                  <p class="old-price">$39.00</p>
+                </div>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div class="product-item">
+              <div class="product-image">
+                <span class="sale">SALE</span>
+
+                <div class="icon">
+                  <img class="icon-heart" src="assets/image_1/Heart.svg" alt="" />
+                  <img class="icon-shopping-cart" src="assets/image_1/Shopping Cart.svg" alt="" />
+                </div>
+
+                <img class="img-1" src="assets/image_1/toy4.png" alt="Toy 1" />
+              </div>
+
+              <div class="product-details">
+                <p>Đồ chơi xếp hình khối</p>
+                <div class="price">
+                  <p class="new-price">$29.00</p>
+                  <p class="old-price">$39.00</p>
+                </div>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="photoshoots">
+          <div class="main-content">
+            <div class="title">
+              <h2 class="heading-lv2 product-head-title">Ảnh chụp gần đây</h2>
+              <p>Check gallery</p>
+            </div>
+            <div class="photo-gallery">
+              <img src="assets/image_1/Photo1.svg" alt="" />
+              <img src="assets/image_1/Photo2.svg" alt="" />
+              <img src="assets/image_1/Photo3.svg" alt="" />
+              <img src="assets/image_1/Photo4.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer></footer>
+</body>
+
 </html>
